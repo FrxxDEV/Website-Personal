@@ -326,6 +326,7 @@ body {
     letter-spacing: 1.5px;
     font-weight: 600;
     border-radius: 2px;
+    white-space: nowrap;
 }
 
 .tag-red { background: #ff6b9d; color: white; }
@@ -1148,6 +1149,14 @@ body {
         height: 300px;
     }
 
+    .post-tag {
+        top: 12px;
+        right: 12px;
+        padding: 7px 14px;
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
     .post-overlay-text {
         font-size: 120px;
     }
@@ -1413,6 +1422,15 @@ body {
 
     .post-card {
         margin-bottom: 5px;
+    }
+
+    .post-tag {
+        top: 12px;
+        right: 12px;
+        padding: 6px 12px;
+        font-size: 9px;
+        letter-spacing: 1px;
+        border-radius: 2px;
     }
 
     .post-card-image {
