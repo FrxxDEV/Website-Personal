@@ -234,9 +234,9 @@ body {
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: 72px;
-    line-height: 1.1;
-    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 25px;
     font-weight: 400;
     letter-spacing: -2px;
 }
@@ -318,8 +318,8 @@ body {
 
 .post-tag {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     padding: 8px 16px;
     font-size: 11px;
     text-transform: uppercase;
@@ -1020,44 +1020,6 @@ body {
     }
 }
 
-/* Form Animations */
-@keyframes successPulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(167, 243, 208, 0.7);
-    }
-    50% {
-        transform: scale(1.02);
-        box-shadow: 0 0 0 10px rgba(167, 243, 208, 0);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(167, 243, 208, 0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(400px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideOutRight {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(400px);
-    }
-}
-
 /* Responsive */
 @media (max-width: 1024px) {
     .container {
@@ -1125,7 +1087,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     .header-content {
@@ -1325,225 +1287,271 @@ body {
     }
 }
 
+/* PERBAIKAN UTAMA UNTUK MOBILE - Padding lebih lega */
 @media (max-width: 480px) {
+    /* Container dengan padding lebih besar */
     .container {
-        padding: 0 20px;
+        padding: 0 30px !important;
+    }
+
+    /* Header dengan ruang yang lebih nyaman */
+    .main-header {
+        padding: 25px 0;
     }
 
     .header-content {
-        padding: 20px 0;
+        padding: 0;
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .logo-subtitle {
         font-size: 9px;
+        letter-spacing: 1.5px;
     }
 
     .main-nav {
-        gap: 15px;
+        gap: 20px;
+        padding-top: 20px;
     }
 
     .main-nav a {
-        font-size: 13px;
+        font-size: 14px;
     }
 
+    /* Hero Section dengan padding lebih lega */
     .hero-section {
-        padding: 40px 0 30px;
+        padding: 50px 0;
     }
 
     .hero-label {
         font-size: 12px;
-    }
-
-    .hero-title {
-        font-size: 32px;
-        line-height: 1.2;
-        margin-bottom: 25px;
-        padding: 0 5px:
-    }
-
-    .hero-desc {
-        font-size: 14px;
-    }
-
-    .hero-visual {
-        height: 220px;
-    }
-
-    .rotating-element {
-        width: 150px;
-        height: 150px;
-        filter: blur(30px);
-    }
-
-    .featured-post {
-        padding: 30px 0;
-    }
-
-    .post-image {
-        height: 220px;
-    }
-
-    .post-overlay-text {
-        font-size: 80px;
-    }
-
-    .post-title-large {
-        font-size: 24px;
         margin-bottom: 15px;
     }
 
-    .post-excerpt-large {
-        font-size: 14px;
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.3;
         margin-bottom: 20px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        line-height: 1.7;
+        padding-right: 0;
+    }
+
+    .hero-visual {
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .rotating-element {
+        width: 180px;
+        height: 180px;
+        filter: blur(35px);
+    }
+
+    /* Featured Post dengan spacing lebih baik */
+    .featured-post {
+        padding: 40px 0;
+    }
+
+    .post-image {
+        height: 250px;
+    }
+
+    .post-overlay-text {
+        font-size: 90px;
+    }
+
+    .post-content-large {
+        padding-top: 30px;
+    }
+
+    .post-title-large {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .post-excerpt-large {
+        font-size: 15px;
+        margin-bottom: 25px;
+        line-height: 1.7;
     }
 
     .post-meta-large {
         flex-direction: column;
-        gap: 8px;
-        font-size: 12px;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    /* Posts Grid dengan padding yang nyaman */
+    .posts-grid {
+        padding: 50px 0;
     }
 
     .section-title {
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 25px;
     }
 
     .section-filters {
-        gap: 8px;
+        gap: 10px;
     }
 
     .filter-btn {
-        padding: 7px 12px;
-        font-size: 12px;
+        padding: 10px 16px;
+        font-size: 13px;
     }
 
     .posts-masonry {
-        gap: 16px;
+        gap: 20px;
+    }
+
+    .post-card {
+        margin-bottom: 5px;
     }
 
     .post-card-image {
-        height: 180px;
+        height: 200px;
     }
 
     .card-number {
-        font-size: 48px;
-        bottom: 10px;
-        right: 10px;
+        font-size: 50px;
+        bottom: 15px;
+        right: 15px;
     }
 
     .post-card-title {
-        font-size: 18px;
-        margin: 12px 12px 8px;
+        font-size: 19px;
+        margin: 20px 20px 12px;
     }
 
     .post-card-excerpt {
-        font-size: 13px;
-        margin: 0 12px 12px;
+        font-size: 14px;
+        margin: 0 20px 18px;
+        line-height: 1.6;
     }
 
     .post-card-footer {
-        padding: 0 12px 12px;
-        font-size: 12px;
+        padding: 0 20px 20px;
+        font-size: 13px;
     }
 
     .read-link {
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .posts-grid {
-        padding: 40px 0;
+    /* Footer dengan padding yang lega */
+    .main-footer {
+        padding: 50px 0 30px;
     }
 
     .footer-grid {
-        gap: 25px;
-        margin-bottom: 30px;
+        gap: 35px;
+        margin-bottom: 35px;
     }
 
     .footer-brand h3 {
-        font-size: 20px;
+        font-size: 22px;
+        margin-bottom: 12px;
     }
 
     .footer-brand p {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.7;
     }
 
     .footer-links h4,
     .footer-newsletter h4 {
         font-size: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
     }
 
     .footer-links a {
         font-size: 13px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .newsletter-form input,
     .newsletter-form button {
-        font-size: 13px;
-        padding: 10px 12px;
+        font-size: 14px;
+        padding: 12px 15px;
     }
 
     .footer-bottom {
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 12px;
     }
 
+    /* Headline Section */
     .headline-section {
-        padding: 40px 0;
+        padding: 50px 0;
+    }
+
+    .headline-content {
+        padding: 0 10px;
     }
 
     .headline-title {
-        font-size: 28px;
-        margin-bottom: 10px;
+        font-size: 32px;
+        margin-bottom: 15px;
+        line-height: 1.3;
     }
 
     .headline-subtitle {
-        font-size: 16px;
-        margin-bottom: 12px;
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .headline-text {
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 1.7;
     }
 
+    /* About Section */
     .about-section {
-        padding: 40px 0;
+        padding: 50px 0;
     }
 
     .about-grid {
-        gap: 20px;
-        margin-top: 30px;
+        gap: 30px;
+        margin-top: 40px;
     }
 
     .about-text {
-        padding: 20px;
+        padding: 25px;
     }
 
     .about-heading {
-        font-size: 20px;
-        margin-bottom: 12px;
+        font-size: 21px;
+        margin-bottom: 15px;
     }
 
     .about-paragraph {
         font-size: 14px;
+        line-height: 1.7;
     }
 
     .about-values {
-        font-size: 13px;
-        line-height: 1.8;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .about-values li {
+        margin-bottom: 12px;
     }
 
     .stat-card {
-        padding: 30px 20px;
+        padding: 35px 25px;
     }
 
     .stat-number {
-        font-size: 32px;
+        font-size: 36px;
+        margin-bottom: 8px;
     }
 
     .stat-label {
@@ -1551,23 +1559,93 @@ body {
     }
 
     .about-stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 18px;
     }
 
     .about-cta {
-        padding: 30px 20px;
-        margin-top: 40px;
+        padding: 35px 25px;
+        margin-top: 50px;
     }
 
     .about-cta h3 {
-        font-size: 22px;
-        margin-bottom: 12px;
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 
     .about-cta p {
         font-size: 14px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        line-height: 1.7;
     }
 
+    .about-btn {
+        padding: 13px 30px;
+        font-size: 12px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-grid {
+        gap: 35px;
+        margin-top: 40px;
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 25px;
+    }
+
+    .contact-form {
+        gap: 22px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 13px 16px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 14px 28px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .info-card,
+    .social-links {
+        padding: 25px;
+    }
+
+    .info-icon {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .info-title,
+    .social-title {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .info-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
 }
